@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmt"
+    tools:context=".QandaFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="質問、回答、コメントなど、なんでも投げてください！" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="誰です？"/>
+
+        <EditText
+            android:id="@+id/cmt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:hint="ご意見ください！"/>
+        <Button
+            android:id="@+id/bt_cmt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comment"
+            android:background="@color/red"
+            android:textColor="@color/aqua"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview2"
+        android:dividerHeight="10dp"
+        android:layout_gravity="center"
+        android:divider="@color/transparent"
+        android:layout_marginBottom="50dp"/>
+
+</LinearLayout>
+</FrameLayout>
