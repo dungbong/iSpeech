@@ -13,77 +13,87 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/Aptext1"
                 android:layout_width="match_parent"
                 android:layout_height="39dp"
-                android:text="卒業研究中間発表の日程を入力してください"
+                android:text="@string/Addextratext1"
                 android:textAlignment="center" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <LinearLayout
-                    android:layout_width="125dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/aptext2"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_weight="1"
-                        android:text="Year"
+                        android:text="@string/aptext2"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukenyearsp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginRight="30dp"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="107dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/aptext3"
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_weight="1"
-                        android:text="Month"
+                        android:text="@string/aptext3"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukenmonthsp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="30dp"
+                        android:textAlignment="viewEnd"/>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/aptext4"
                         android:layout_width="match_parent"
                         android:layout_height="4dp"
                         android:layout_weight="1"
-                        android:text="Day"
+                        android:text="@string/aptext4"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukendaysp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:layout_marginRight="30dp"
+                        android:textAlignment="viewEnd"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -94,64 +104,72 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="125dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/aptext5"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_weight="1"
-                        android:text="hour"
+                        android:text="@string/aptext5"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukenhoursp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:layout_marginRight="30dp"
+                        android:textAlignment="viewEnd"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="107dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/aptext6"
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_weight="1"
-                        android:text="Minuit"
+                        android:text="@string/aptext6"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukenminurtesp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:layout_marginRight="30dp"
+                        android:textAlignment="viewEnd"/>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/aptext7"
                         android:layout_width="match_parent"
                         android:layout_height="4dp"
                         android:layout_weight="1"
-                        android:text="second"
+                        android:text="@string/aptext7"
                         android:textAlignment="center" />
 
                     <Spinner
                         android:id="@+id/sotukensecondsp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:textAlignment="viewEnd"
                         android:layout_weight="1" />
                 </LinearLayout>
 

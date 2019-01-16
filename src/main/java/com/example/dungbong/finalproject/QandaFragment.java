@@ -78,7 +78,7 @@ public class QandaFragment extends Fragment {
                 values.put(DBHelper.FeedEntry.COLUMN_NAME_SUBTITLE, string_cmt);
                 long newRowId = db.insert(DBHelper.FeedEntry.TABLE_NAME, null, values);
 
-                Toast.makeText(getActivity(), "Comment added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.cmt_add, Toast.LENGTH_SHORT).show();
                 db.close();
 
                 fragmentTransaction.replace(R.id.container, new QandaFragment());
@@ -98,7 +98,7 @@ public class QandaFragment extends Fragment {
                 db.delete("comment", FeedReaderDbHelper.FeedEntry._ID + "=" + id, null);
 
 
-                Toast.makeText(getActivity(), "Comment deleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.cmt_delete, Toast.LENGTH_SHORT).show();
 
                 arrayAdapter.notifyDataSetChanged();
                 db.close();

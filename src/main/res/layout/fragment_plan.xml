@@ -50,7 +50,7 @@
 
         <TextView
             android:id="@+id/textday"
-            android:layout_width="46dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
@@ -58,7 +58,7 @@
             android:layout_marginStart="246dp"
             android:layout_marginLeft="246dp"
             android:layout_marginTop="106dp"
-            android:text="日"
+            android:text="@string/aptext9"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
             android:textColor="@color/black"
             android:textSize="36sp" />
@@ -73,7 +73,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="18dp"
-            android:text="事例研究会中間発表まで"
+            android:text="@string/aptext8"
             android:textAppearance="@style/TextAppearance.AppCompat.Caption"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -99,7 +99,7 @@
         android:id="@+id/textTodo"
         android:layout_width="match_parent"
         android:layout_height="26dp"
-        android:text="todos"
+        android:text="@string/aptext10"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/planlsit_lv"
@@ -110,7 +110,7 @@
     <ListView
         android:id="@+id/planlsit_lv"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height=" 300dp"
         app:layout_constraintBottom_toTopOf="@+id/addtodo_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,8 +122,8 @@
         android:id="@+id/addtodo_bt"
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:layout_marginBottom="0dp"
-        android:text="add Todo"
+        android:layout_marginBottom="50dp"
+        android:text="@string/aptext11"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

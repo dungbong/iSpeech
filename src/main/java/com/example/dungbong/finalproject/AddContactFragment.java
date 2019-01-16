@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +27,6 @@ import java.io.FileOutputStream;
  */
 
 public class AddContactFragment extends Fragment {
-
     public AddContactFragment() {
         // Required empty public constructor
     }
@@ -60,7 +61,13 @@ public class AddContactFragment extends Fragment {
 // Insert the new row, returning the primary key value of the new row
                 long newRowId = db.insert(FeedReaderDbHelper.FeedEntry.TABLE_NAME, null, values);
                 db.close();
-                Toast.makeText(getActivity(), "Contact added", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.contact_add, Toast.LENGTH_SHORT).show();
+
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                fragmentTransaction.replace(R.id.container, new ContactFragment());
+                fragmentTransaction.commit();
             }
         });
 

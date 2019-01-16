@@ -21,18 +21,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textColor="@color/red"
-                android:text="To: "/>
+                android:text="@string/contact_send_to"/>
 
-            <EditText
-                android:id="@+id/Text10"
+            <TextView
+                android:id="@+id/send_to"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="9"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="To"
                 android:textColor="@color/red"
                 android:textSize="20sp"/>
 
@@ -40,7 +39,7 @@
                 android:id="@+id/send_mail"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
                 android:background="@color/transparent"
@@ -49,16 +48,16 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/subject"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Subject" />
+            android:hint="@string/contact_send_subject" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Compose mail" />
+            android:hint="@string/contact_send_content" />
 
     </LinearLayout>
 

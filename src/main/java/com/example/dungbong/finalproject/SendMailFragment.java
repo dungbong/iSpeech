@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -34,7 +35,7 @@ public class SendMailFragment extends Fragment {
 
         ImageButton button = view.findViewById(R.id.send_mail);
 
-        EditText text_to = view.findViewById(R.id.Text10);
+        TextView text_to = view.findViewById(R.id.send_to);
         text_to.setText(ContactFragment.str);
 
 
@@ -42,20 +43,20 @@ public class SendMailFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText text_who = getView().findViewById(R.id.Text10);
+                TextView text_who = getView().findViewById(R.id.send_to);
                 String string_who = text_who.getText().toString();
 
-                EditText text_subject = getView().findViewById(R.id.editText7);
+                EditText text_subject = getView().findViewById(R.id.subject);
                 String string_subject = text_subject.getText().toString();
 
-                EditText text_content = getView().findViewById(R.id.editText8);
+                EditText text_content = getView().findViewById(R.id.content);
                 String string_content = text_content.getText().toString();
 
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
                 emailIntent.setData(Uri.parse("mailto:"));
                 //emailIntent.setType("text/plain");
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, ContactFragment.str);
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{ContactFragment.str});
                 //emailIntent.putExtra(Intent.EXTRA_CC, CC);
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, string_subject);
                 emailIntent.putExtra(Intent.EXTRA_TEXT, string_content);

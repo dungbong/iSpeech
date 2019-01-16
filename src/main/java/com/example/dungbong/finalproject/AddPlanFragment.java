@@ -121,6 +121,8 @@ public class AddPlanFragment extends Fragment {
                         fragmentTransaction.commit();
 
                 }
+
+
             }
         });
 

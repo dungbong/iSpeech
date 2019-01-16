@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textColor="@color/black"
-            android:text="発表会参加者の連絡先です。\n 下右の追加ボタンをクリックすると連絡先を追加します。連絡行をクリックすると、その人にメールを作成します。参加できない人の行を長い押しすると削除します。" />
+            android:text="@string/contact_explanation"/>
 
         <ListView
             android:id="@+id/listView"

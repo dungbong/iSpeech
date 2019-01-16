@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:text="質問、回答、コメントなど、なんでも投げてください！" />
+        android:text="@string/comment_explanation" />
 
 
     <LinearLayout
@@ -30,20 +30,20 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:hint="誰です？"/>
+            android:hint="@string/comment_from"/>
 
         <EditText
             android:id="@+id/cmt"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="3"
-            android:hint="ご意見ください！"/>
+            android:hint="@string/comment_what"/>
         <Button
             android:id="@+id/bt_cmt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Comment"
+            android:text="@string/comment_bt"
             android:background="@color/red"
             android:textColor="@color/aqua"/>
     </LinearLayout>

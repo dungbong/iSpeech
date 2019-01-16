@@ -90,6 +90,7 @@ public class ContactFragment extends Fragment {
         catch (SQLException e) {
             e.printStackTrace();
         }
+
         ListView listview = view.findViewById(R.id.listView);
 
 
@@ -127,7 +128,7 @@ public class ContactFragment extends Fragment {
                 id_list.remove(position);
                 mail_list.remove(position);
 
-                Toast.makeText(getActivity(), "連絡を削除しました", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), R.string.contact_delete, Toast.LENGTH_SHORT).show();
 
                 arrayAdapter.notifyDataSetChanged();
                 db.close();
