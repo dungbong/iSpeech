@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_plan"
+        android:icon="@drawable/plan_icon"
+        android:title="@string/plan" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/contact_icon"
+        android:title="@string/contact" />
+
+    <item
+        android:id="@+id/navigation_timer"
+        android:icon="@drawable/timer_icon"
+        android:title="@string/timer" />
+
+    <item
+        android:id="@+id/navigation_qanda"
+        android:icon="@drawable/qanda_icon"
+        android:title="@string/qanda"/>
+</menu>

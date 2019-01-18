@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clock1"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="169dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/Rdtimer"
+                android:visibility="visible"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="90dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/minute"
+                    android:text="@string/minute"
+                    android:textSize="30dp"
+                    android:checked="true"
+                    android:layout_marginRight="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/second"
+                    android:text="@string/second"
+                    android:textSize="30dp"/>
+            </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/btgiam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@null"
+                android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/textViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:text="00:00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="70dp" />
+
+            <ImageButton
+                android:id="@+id/bttang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@null"
+                android:src="@drawable/ic_control_point_black_24dp"
+                android:contentDescription="TODO" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+
+
+            <Button
+                android:background="@android:color/holo_green_dark"
+                android:id="@+id/buttonStartStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="@string/start"
+                android:layout_marginRight="70dp" />
+
+
+            <Button
+                android:background="@android:color/holo_green_dark"
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:textSize="30dp"
+                android:visibility="invisible"
+                tools:visibility="visible" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/dungthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/aqua"
+            android:text="@string/over"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="70dp"
+            android:layout_marginRight="12dp"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

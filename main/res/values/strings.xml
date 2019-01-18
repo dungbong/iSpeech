@@ -1,0 +1,62 @@
+<resources>
+    <!-- Zun's -->
+    <string name="app_name">iSpeech</string>
+    <string name="plan">計画</string>
+    <string name="contact">連絡</string>
+    <string name="timer">タイマー</string>
+    <string name="qanda">質問・コメント</string>
+    <string name="title_activity_plan">PlanActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="contact_explanation">"発表会参加者の連絡先です。 右下の追加ボタンをタップすると連絡先を追加します。連絡行をタップすると、その人にメールを作成します。参加できない人の行を長押しすると削除します。 "</string>
+    <string name="contact_add_name">名前を入力してください</string>
+    <string name="contact_add_mail">連絡先を入力してください</string>
+    <string name="contact_send_to">宛先：</string>
+    <string name="contact_send_subject">件名</string>
+    <string name="contact_send_content">メール作成</string>
+    <string name="comment_from">誰から？</string>
+    <string name="comment_what">ご意見ください！</string>
+    <string name="comment_bt">コメント</string>
+    <string name="contact_add_bt">追加</string>
+    <string name="home_tv1">卒業研究中間発表会サポートシステム</string>
+    <string name="home_tv2">開発者：\n山口宙来\nグエンフーズン\nドティバン　ジェウ</string>
+    <string name="cmt_add">コメント追加しました</string>
+    <string name="cmt_delete">コメント削除しました</string>
+    <string name="contact_add">連絡追加しました</string>
+    <string name="contact_delete">連絡削除しました</string>
+
+    <!-- Dieu's -->
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+    <string name="start">開始</string>
+    <string name="stop">停止</string>
+    <string name="over">延長時間</string>
+    <string name="reset">リセット</string>
+
+    <!-- Yamaguchi's -->
+    <string name="Addextratext1">卒業研究中間発表の日程を入力してください</string>
+    <string name="aptext2">年</string>
+    <string name="aptext3">月</string>
+    <string name="aptext4">日</string>
+    <string name="aptext5">時</string>
+    <string name="aptext6">分</string>
+    <string name="aptext7">秒</string>
+    <string name="aptext8">事例研究会中間発表まで</string>
+    <string name="aptext9">日</string>
+    <string name="aptext10">Todos</string>
+    <string name="aptext11">追加</string>
+    <string name="plan_name">名前</string>
+    <string name="plan_date">日程</string>
+    <string name="plan_tv1">年</string>
+    <string name="plan_tv2">月</string>
+    <string name="plan_tv3">日</string>
+    <string name="checkbox">終わったらチェックしてください！</string>
+    <string name="delete">削除</string>
+    <string name="decide">決定</string>
+    <string name="comment_explanation">質問、回答、コメントなど、なんでも投げてください！</string>
+    <string name="none">無効な日程</string>
+
+</resources>
